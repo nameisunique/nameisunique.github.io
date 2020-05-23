@@ -13077,6 +13077,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><font size="25"><center>_Decisions, Decisions_ <br> **Where To Work Next??**</center></font></p>
+<p><br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="https://i.etsystatic.com/6891215/r/il/0d8c1b/467987260/il_1588xN.467987260_sfbv.jpg" alt="Trulli" width="800" height="420"></p>
 
 </div>
@@ -13085,7 +13094,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1><center>Where To Work Next?</center></h1>
+<p><br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4>Tom Sensabaugh  <br>May 22, 2020</h4>
+
 </div>
 </div>
 </div>
@@ -13148,22 +13166,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="What-do-we-have-to-work-with?">What do we have to work with?<a class="anchor-link" href="#What-do-we-have-to-work-with?">&#182;</a></h4><p>For the curious, this is what I found from the Stack Overflow data:</p>
-<ul>
-<li>7 Numeric</li>
-<li>146 Categorical</li>
-<li>1 Bool</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">Data Understanding (CRISP-DM Stage 2: Data Understanding)<a class="anchor-link" href="#Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">&#182;</a></h3><p>A few thoughts:</p>
-<p>1) For my analysis, I took a "low level" approach with python/numpy (head,tail,describe,shape,etc). Those can be very helpful tools for initial understanding, and usually the first place I investigate data from.</p>
-<p>2) I like a python tool called "Pandas Profiling" as it provides a helpful summary as well is reflective of how I use python in my daily work. What I find valuable about this tool is that it provides a good level of initial data exploration, the depth of detail I want to see for each feature of data, as well as a good start at correlations and other related relationships.</p>
+<h3 id="Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">Data Understanding (CRISP-DM Stage 2: Data Understanding)<a class="anchor-link" href="#Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">&#182;</a></h3><p>For this stage, I'll explore the variables that I believe support my questions and look for interesting/valid relationships and trends that help answer these questions.</p>
 
 </div>
 </div>
@@ -13273,21 +13276,78 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data-preparation">Data preparation<a class="anchor-link" href="#Data-preparation">&#182;</a></h1><h4 id="CRISP-DM-Stage-3:-Prepare-Data">CRISP-DM Stage 3: Prepare Data<a class="anchor-link" href="#CRISP-DM-Stage-3:-Prepare-Data">&#182;</a></h4><p>For categorical variables "Country", I seperated them into three sectors: western, eastern and other.</p>
-<p>While I'm primarily interested in "East" vs. "West", the I still want to keep the "Other" category for information value.</p>
-<p>Here is a code snippet that shows how I broke down East and West countries. All remaining countries in the survey defaulted to "Other":</p>
-
-<pre><code>western = ['United States',  'Switzerland', 
-       'Iceland', 'Norway', 'Israel', 'Denmark', 
-       'Ireland', 'Canada', 'United Kingdom', 'Germany', 
-       'Netherlands', 'Sweden', 'Austria', 
-       'Finland', 'France', 'Belgium', 'Spain', 'Italy',
-       'Poland']
-
-eastern = ['Thailand', 'Singapore', 'Hong Kong', 
-       'South Korea', 'Japan', 'China', 
-       'Taiwan',  'India', 
-       'Indonesia', 'Vietnam']</code></pre>
+<h1 id="Data-preparation">Data preparation<a class="anchor-link" href="#Data-preparation">&#182;</a></h1><h4 id="CRISP-DM-Stage-3:-Prepare-Data">CRISP-DM Stage 3: Prepare Data<a class="anchor-link" href="#CRISP-DM-Stage-3:-Prepare-Data">&#182;</a></h4><p>Here is how I broke down "East" and "West" countries for our comparisons. While I'm primarily interested in "East" vs. "West", the I still want to keep the "Other" category for information value.</p>
+<table>
+<thead><tr>
+<th>---&gt;</th>
+<th>West</th>
+<th>&lt;---</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>United States</td>
+<td>Switzerland</td>
+<td>Iceland</td>
+</tr>
+<tr>
+<td>Norway</td>
+<td>Israel</td>
+<td>Denmark</td>
+</tr>
+<tr>
+<td>Ireland</td>
+<td>Canada</td>
+<td>UK</td>
+</tr>
+<tr>
+<td>Germany</td>
+<td>Netherlands</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>Austria</td>
+<td>Finland</td>
+<td>France</td>
+</tr>
+<tr>
+<td>Belgium</td>
+<td>Spain</td>
+<td>Italy</td>
+</tr>
+<tr>
+<td>Poland</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead><tr>
+<th>---&gt;</th>
+<th>East</th>
+<th>&lt;---</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thailand</td>
+<td>Singapore</td>
+<td>Hong Kong</td>
+</tr>
+<tr>
+<td>South Korea</td>
+<td>Japan</td>
+<td>China</td>
+</tr>
+<tr>
+<td>Taiwan</td>
+<td>India</td>
+<td>Indonesia</td>
+</tr>
+<tr>
+<td>Vietnam</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -13303,8 +13363,10 @@ eastern = ['Thailand', 'Singapore', 'Hong Kong',
 <li>Salary: Their Salary</li>
 <li>JobSatisfaction &amp; CareerSatisfaction: Are their satisfy their job and career</li>
 <li>Overpaid: How they think about their salary</li>
+<li>Collaborate Remote and Home Remote: Understand the desire and ability to work and collaborate remote</li>
+<li>Hours worked per week</li>
 </ul>
-<p>I also wanted to have a breakdown by Years individuals were coding, since I'm interested in the maturity levels of companies and the regions of interet</p>
+<p>I wanted to have a breakdown by Years individuals were coding, since I'm interested in the maturity levels of companies and the regions of interet</p>
 
 </div>
 </div>
@@ -13329,7 +13391,8 @@ eastern = ['Thailand', 'Singapore', 'Hong Kong',
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="An-old-favorite:-Correlation-Analysis">An old favorite: Correlation Analysis<a class="anchor-link" href="#An-old-favorite:-Correlation-Analysis">&#182;</a></h4><p>Here is a heatmap that shows correlations broken down by East, West, and Other. The red spectrum means stronger correlations, and the blue spectrum means weaker correlations. Not much of a surprise that there are strong correlations in both the East and West between Job and Career Satisfaction. It's good that there is a breakdown between these two areas, since Job Satisfaction can be affected by changing jobs, learning new and often related skills (Python vs. JavaScript), making more money. Career Satisfaction is something that often influences bigger life changes, such as changing careers completely.</p>
+<h4 id="An-old-favorite:-Correlation-Analysis-(aka-Heatmap)">An old favorite: Correlation Analysis (aka Heatmap)<a class="anchor-link" href="#An-old-favorite:-Correlation-Analysis-(aka-Heatmap)">&#182;</a></h4><p>A heatmap show the relationship and strength of that relationship between two variables. In this heatmap, the positive relationship (or more correlated) is a spectrum from light to dark red; a negative relationship (or less correlated) is a light to dark blue spectrum.</p>
+<p>Here is a heatmap that shows correlations broken down by East, West, and Other. The red spectrum means stronger correlations, and the blue spectrum means weaker correlations. Not much of a surprise that there are strong correlations in both the East and West between Job and Career Satisfaction. It's good that there is a breakdown between these two areas, since Job Satisfaction can be affected by changing jobs, learning new and often related skills (Python vs. JavaScript), making more money. Career Satisfaction is something that often influences bigger life changes, such as changing careers completely.</p>
 <p>Remember Salary is a weak data point due to sample size, but that said I was a bit surprised with the low correlations between Job Satisfaction and Salary. But only a bit, as I'd heard Salary in general referred to as a "Satis-ficer". Meaning salary, once a certain sufficient level is achieved, provides less satisfaction.</p>
 <p>I did want to investigate further into Collaborate Remote as well, again lower correlations that I'd like to see. It appears that it's more imporant in the West than the East, but still it's a low number for both.</p>
 
@@ -13589,19 +13652,6 @@ eastern = ['Thailand', 'Singapore', 'Hong Kong',
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
