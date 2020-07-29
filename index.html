@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>HTML Out</title>
-    <script src="HTML%20Out_files/require.js"></script>
-    <script src="HTML%20Out_files/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <style type="text/css">
     /*!
 *
@@ -13039,12 +13040,12 @@ div#notebook {
   }
 }
 </style><!-- Custom stylesheet, it must be in the same directory as the html file -->
-    <link rel="stylesheet" href="HTML%20Out_files/custom.css">
+    <link rel="stylesheet" href="custom.css">
     <!-- Loading mathjax macro -->
     <!-- Load mathjax -->
-    <script src="HTML%20Out_files/latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config;executed=true">
+    <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -13062,137 +13063,37 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration -->
-    <script type="text/javascript" async="" src="HTML%20Out_files/MathJax.js"></script>
-    <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
-.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
-.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
-.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
-</style>
-    <style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 1px 2em; background: transparent}
-.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
-.MathJax_MenuActive .MathJax_MenuArrow {color: white}
-.MathJax_MenuArrow.RTL {left: .5em; right: auto}
-.MathJax_MenuCheck {position: absolute; left: .7em}
-.MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: .7em}
-.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
-.MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: #606872; color: white}
-.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
-.MathJax_ContextMenu:focus {outline: none}
-.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
-#MathJax_AboutClose {top: .2em; right: .2em}
-.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
-.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
-.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
-.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_MenuClose:hover span {background-color: #CCC!important}
-.MathJax_MenuClose:hover:focus {outline: none}
-</style>
-    <style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
-</style>
-    <style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
-.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
-</style>
-    <style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
-#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-</style>
-    <style type="text/css">.MathJax_Preview {color: #888}
-#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
-#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
-.MathJax_Error {color: #CC0000; font-style: italic}
-</style>
-    <style type="text/css">.MJXp-script {font-size: .8em}
-.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
-.MJXp-bold {font-weight: bold}
-.MJXp-italic {font-style: italic}
-.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-largeop {font-size: 150%}
-.MJXp-largeop.MJXp-int {vertical-align: -.2em}
-.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
-.MJXp-display {display: block; text-align: center; margin: 1em 0}
-.MJXp-math span {display: inline-block}
-.MJXp-box {display: block!important; text-align: center}
-.MJXp-box:after {content: " "}
-.MJXp-rule {display: block!important; margin-top: .1em}
-.MJXp-char {display: block!important}
-.MJXp-mo {margin: 0 .15em}
-.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
-.MJXp-denom {display: inline-table!important; width: 100%}
-.MJXp-denom > * {display: table-row!important}
-.MJXp-surd {vertical-align: top}
-.MJXp-surd > * {display: block!important}
-.MJXp-script-box > *  {display: table!important; height: 50%}
-.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
-.MJXp-script-box > *:last-child > * {vertical-align: bottom}
-.MJXp-script-box > * > * > * {display: block!important}
-.MJXp-mphantom {visibility: hidden}
-.MJXp-munderover, .MJXp-munder {display: inline-table!important}
-.MJXp-over {display: inline-block!important; text-align: center}
-.MJXp-over > * {display: block!important}
-.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
-.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
-.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
-.MJXp-mtr {display: table-row!important}
-.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
-.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-mlabeledtr {display: table-row!important}
-.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
-.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
-.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
-.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
-.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
-.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
-.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
-.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
-.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
-.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
-.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
-</style>
   </head>
   <body>
     <div tabindex="-1" id="notebook" class="border-box-sizing">
       <div class="container" id="notebook-container">
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
-              <p><img src="clash.jpg" alt="Trulli" height="420"
-                  width="800"></p>
+              <p><img
+src="https://i.etsystatic.com/6891215/r/il/0d8c1b/467987260/il_1588xN.467987260_sfbv.jpg"
+                  alt="Trulli" width="800" height="420"></p>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
               <h1>
-                <center>Sparkify: Should I stay or should I go?<br>
-                </center>
+                <center>Where To Work Again?</center>
               </h1>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
@@ -13201,46 +13102,37 @@ div#notebook {
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
-              <p>Sparkify is Udacity's (on paper...so far) music
-                streaming service that produces data similar to Spotify
-                or Pandora. Users play and/or rate their favorite songs
-                through such services on a daily basis. The business
-                model employed is a free and pay tiered system where
-                free/unpaid users have generally limited access and
-                often see advertisements to offset the royalty fees paid
-                to music artists. Users have the ability to upgrade
-                their service (become a paying customer), or downgrade
-                their service (from paying to non-paying); both tiers
-                have the ability to cancel their service, and that lost
-                of a customer would be considered "customer churn".<br>
-                <br>
-                All user interaction with Sparkify revolves around these
-                activities:<br>
-                <br>
-                * Play a song <br>
-                * Creating and updating playlists<br>
-                * Rating song with the thumbs up or thumbs down button<br>
-                * Add a friend<br>
-                * Logging in or out<br>
-                * Changing settings<br>
-                <br>
-                Each of these activities generates an entry into the
-                user logs. Naturally, log analytics are a key factor for
-                the Sparkify marketing team and all the executive staff.
-                The team at Udacity has provided a test dataset for our
-                analysis, although little documentation has been
-                provided on the dataset.<br>
-                <br>
-              </p>
+              <p>Working for IBM, there are often opportunities to work
+                in a variety of worldwide locations outside of your own
+                home country. About 10 years ago I took an assignment to
+                work and live for several years in the UK. That was a
+                fascinating opportunity to work in and absorb a European
+                culture. Now many of the opportunities are in what IBM
+                refers to as "emerging markets", such as China,
+                Singapore, India, and others.</p>
+              <p>While Europe was what I'd consider to be an "easy"
+                place to work (not too dissimalar cultures from the US,
+                English generally spoken, salary ranges comparable to
+                the US), I'm wondering if an opportunity to work in one
+                of the emerging markets would be viable.</p>
+              <p>Use the Stack Overflow data from 2017 from Kaggle as
+                the basis for the examination per the rubric. The survey
+                itself is pretty interesting and I will use this project
+                as a foundation to examine the results with future
+                results. I did find that Kaggle also has provides a good
+                survey data tool that was very helpful in getting an
+                intial view of the data.</p>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
@@ -13249,900 +13141,894 @@ div#notebook {
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
-              <p>Realistically, there is one main question we want to
-                answer: Will either a paying or free user leave? That is
-                called churn and apps like Sparkify live and die by the
-                churn rate. <br>
-              </p>
-              <br>
-              Along the way, I'll load and examine to data looking to
-              clean the dataset for further examination. After this, EDA
-              (Exploratory Data Analysis) will take place to better
-              understand the data and prepare it for creating several
-              machine learning models that will help to understand which
-              customers are likely to churn. <br>
-              <br>
-              I'll be looking for the best "F1" score, which is a
-              measurement of the accuracy of a data model to evaluate
-              the best model. After that, I'll present my conclusions
-              along with ideas for further improvement. <br>
+              <p>Here are the questions that I'm looking to answer in
+                this project:</p>
+              <p>Main query topic: Should I stay in the US or should I
+                go? I'll frame this as basically "Stay in the West" or
+                "Go to the East"</p>
+              <ul>
+                <li>What is the salary difference between the West and
+                  the East?</li>
+                <li>Any significant job satisfaction differences?</li>
+                <li>What is the propensity to work remotely? </li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
-              <h4 id="CRISP-DM">SPARK!<a class="anchor-link"
+              <h4 id="CRISP-DM">CRISP-DM<a class="anchor-link"
                   href="#CRISP-DM">¶</a></h4>
-              <p>I'll be using a Spark, which is an open source
-                framework for distributed data processing. This allows
-                potentially large and geographically dispersed data to
-                be accessed and analyzed seamlessly by the developer.
-                This allows for data to scale to very large sizes, yet
-                users are able to use this data without needing to be
-                aware of this dynamic. <br>
+              <p>I'd also like to highlight in this blog a very useful
+                method/process called CRISP-DM:</p>
+              <p><font color="blue">CR</font><font color="black">isp</font><br>
+                <font color="blue">I</font><font color="black">ndustry</font><br>
+                <font color="blue">S</font><font color="black">tandard</font><br>
+                <font color="blue">P</font><font color="black">rocess</font><br>
+                <font color="blue">D</font><font color="black">ata</font><br>
+                <font color="blue">M</font><font color="black">ining</font><br>
               </p>
-              <p>
-                <meta http-equiv="content-type" content="text/html;
-                  charset=UTF-8">
-                Developers that use the Spark ecosystem can focus on the
-                domain-specific data processing business case, while
-                Spark will handles the messy details of parallel
-                computing, such as data partitioning, job scheduling,
-                and fault-tolerance. This supports the flexibility and
-                scalability needed to handle massive volumes of data
-                efficiently.<br>
-              </p>
-              <p>Pyspark is the Python API to Spark, which allows all of
-                the attendant benefits of Python and it's libraries to
-                be used with Spark. It's a happy marriage!<br>
-              </p>
-              <p>The folks at Data Flair have a nice infographic that
-                shows the highlights of Spark.<br>
-              </p>
-              <br>
-              <br>
-              <p><img src="spark.jpg" alt="SPSS CRISP-DM" title="SPSS
-                  Crisp" height="1300" width="1200"></p>
+              <p>I'll be making periodic references throughout.</p>
+              <p>Coming from an SPSS background, CRISP-DM has always
+                been a cornerstone of SPSS development, particulary when
+                using SPSS Modeler. This project follows the CRISP-DM
+                process.</p>
+              <p>The SPSS Modeler view of CRISP-DM:</p>
+              <p><img
+src="https://www.ibm.com/support/knowledgecenter/SS3RA7_18.2.1/modeler_crispdm_ddita/clementine/images/crisp_process.jpg"
+                  alt="SPSS CRISP-DM" title="SPSS Crisp"></p>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="What-do-we-have-to-work-with?">What do we have to
+                work with?<a class="anchor-link"
+                  href="#What-do-we-have-to-work-with?">¶</a></h4>
+              <p>For the curious, this is what I found from the Stack
+                Overflow data:</p>
+              <ul>
+                <li>7 Numeric</li>
+                <li>146 Categorical</li>
+                <li>1 Bool</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
               <h3
                 id="Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">Data
-
-
-
-
-
-
-
-                Understanding<a class="anchor-link"
+                Understanding (CRISP-DM Stage 2: Data Understanding)<a
+                  class="anchor-link"
                   href="#Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">¶</a></h3>
               <p>A few thoughts:</p>
               <p>1) For my analysis, I took a "low level" approach with
-                python in addition to using a number of useful functions
-                provided by Pyspark.. Those can be very helpful tools
-                for initial understanding, and usually the first place I
-                investigate data from.</p>
-              <p>2) For the initial data loading and cleaning, I use a
-                variety of Python functions to look for nulls, missing
-                data, outliers, and data that needs to be removed.
-                Potentially I may need to use some statistical
-                techniques to extrapolate (or impute) missing values;
-                for this data I did not impute any values.<br>
-              </p>
-              <p>
-                <meta http-equiv="content-type" content="text/html;
-                  charset=UTF-8">
-              </p>
-              <div class="lm-Widget p-Widget jp-RenderedHTMLCommon
-                jp-RenderedMarkdown jp-MarkdownOutput"
-                data-mime-type="text/markdown">
-                <h4 id="Data-Findings">Data Findings</h4>
-                <p>This is my initial set of findings about the dataset.
-                  Since the documentation about the log records was not
-                  present, potentially this would be updated as more is
-                  known about the dataset.</p>
-                <p>This also presents a minor quandary. What
-                  fields/features should I drop, if any, for the
-                  upcoming models? In other binary classification
-                  problems I've worked on at my job, we tend to
-                  initially leave most or all of the columns in.
-                  Especially when there is little to nothing known about
-                  the dataset. At present, there are 18 columns. There
-                  are potentially a few "easy" ones to drop. For
-                  example, I could drop the first and last name. I doubt
-                  they will be a very important feature. However, being
-                  more inclusive than less is the direction I'm going. </p>
-                <p>Here's what has been surmised around a user:</p>
-                <ul>
-                  <li>User Id : User identifier </li>
-                  <li>firstName: Users first name</li>
-                  <li>lastName: Users surname</li>
-                  <li>gender: either M or F</li>
-                  <li>location: not known if this comes from the IP
-                    address or user provided. Leaning towards from the
-                    IP address</li>
-                  <li>userAgent: OS/method used to access Sparkify. (57
-                    different categories)</li>
-                  <li>registration: UNIX/epoch time stamp for presume
-                    initial registration</li>
-                  <li>level: user subscription status (free or paid)</li>
-                </ul>
-                <p>Log details:</p>
-                <ul>
-                  <li>ts : timestamp of a given log </li>
-                  <li>page : type of web/app page access (19 categories)</li>
-                  <ul>
-                    <li>
-                      <meta http-equiv="content-type"
-                        content="text/html; charset=UTF-8">
-                      Cancel</li>
-                    <li>Submit Downgrade</li>
-                    <li>Thumbs Down</li>
-                    <li>Home</li>
-                    <li>Downgrade</li>
-                    <li>Roll Advert</li>
-                    <li>Logout</li>
-                    <li>Save Settings</li>
-                    <li>Cancellation Confirmation</li>
-                    <li>About</li>
-                    <li>Settings</li>
-                    <li>Add to Playlist</li>
-                    <li>Add Friend</li>
-                    <li>NextSong</li>
-                    <li>Thumbs Up</li>
-                    <li>Help</li>
-                    <li>Upgrade</li>
-                    <li>Error</li>
-                    <li>Submit Upgrade</li>
-                  </ul>
-                  <li>auth : authentication status (4 categories) </li>
-                  <li>sessionID : what session for the log</li>
-                  <li>itemInSession : a counter maintained for what
-                    looks like a given session</li>
-                  <li>method : http method</li>
-                  <li>status : looks like the http status code;</li>
-                </ul>
-                <p>Song details</p>
-                <ul>
-                  <li>song : song name</li>
-                  <li>artist : artist name</li>
-                  <li>length: song's length (seconds)</li>
-                </ul>
-              </div>
-              <p>&nbsp;</p>
-              <br>
+                python/numpy (head,tail,describe,shape,etc). Those can
+                be very helpful tools for initial understanding, and
+                usually the first place I investigate data from.</p>
+              <p>2) I like a python tool called "Pandas Profiling" as it
+                provides a helpful summary as well is reflective of how
+                I use python in my daily work. What I find valuable
+                about this tool is that it provides a good level of
+                initial data exploration, the depth of detail I want to
+                see for each feature of data, as well as a good start at
+                correlations and other related relationships.</p>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
-              <h4 id="Note-on-Salary">Interesting findings so far<br>
-              </h4>
-              <p>The fields below had null, meaning no values, in them.
-                I believe that the reason the artist/length/song field
-                count is so high is that the user may have either
-                skipped the song before it had a chance to play or it
-                was indeed an empty value. I would need to take this
-                back to the team that puts the log file together to
-                understand the Artist/Length/Song field dynamics. Since
-                they are all the same value (58392), it's a likely
-                conclusion that whatever the issue is causing it is the
-                same for all songs/artist/length.<br>
-              </p>
-              <p>The other same count number (8346) are less than 3% of
-                the records in the dataset (it's count is 286,500) so I
-                removed those rows. I believe this to be an issue with
-                how the registration process is set up, so back to the
-                data log file team.<br>
-              </p>
-              <p>I made a decision here NOT to remove any of the
-                columns. For initial work with a dataset, especially one
-                that I don't have much (or in this case any) information
-                about, I prefer to use all the fields once I've cleaned
-                the dataset. Later, depending on how the ML analysis
-                goes, I may remove some of the fields. For example,
-                first and last name. Note: I also address data privacy
-                in the conclusion; that might be another reason to
-                remove the names.<br>
-              </p>
-              <p>
-                <meta http-equiv="content-type" content="text/html;
-                  charset=UTF-8">
-              </p>
-              <p>
-                <meta http-equiv="content-type" content="text/html;
-                  charset=UTF-8">
-              </p>
-              <pre><font face="Arial"><b>Fields with missing values</b><br>artist : 58392
-firstName : 8346
-gender : 8346
-lastName : 8346
-length : 58392
-location : 8346
-registration : 8346
-song : 58392
-userAgent : 8346</font>
-</pre>
+              <h4 id="Note-on-Salary">Note on Salary<a
+                  class="anchor-link" href="#Note-on-Salary">¶</a></h4>
+              <p>While there is a question in the survey that references
+                currency used, in research how Stack Overflow handles
+                the Salary field I found it's handy that they convert
+                all salary values in terms of USD. <a
+                  href="https://insights.stackoverflow.com/survey/2019#methodology">https://insights.stackoverflow.com/survey/2019#methodology</a></p>
+              <p>As expected, there are also a few currency converters
+                for Python
+                <a
+                  href="https://www.geeksforgeeks.org/currency-converter-in-python/">https://www.geeksforgeeks.org/currency-converter-in-python/</a>
+                <a href="https://pypi.org/project/CurrencyConverter/">https://pypi.org/project/CurrencyConverter/</a></p>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
-              <h3
-                id="Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">Exploratory
-
-
-
-
-
-
-                Data Analysis (EDA)<br>
-              </h3>
-              <h4 id="A-Second-Note-on-Salary"><a class="anchor-link"
-                  href="#A-Second-Note-on-Salary">¶</a></h4>
-              <p>The first item of business is to define a new column as
-                "Churn" and populate it from the appropriate field. Here
-                is an example of 5 records with the new field Churn
-                populated. It is populated from the Page column and the
-                value of "Cancellation Confirmation" being present was
-                used.<br>
-                <img src="5%20records.jpg" alt="" height="308"
-                  width="1356"></p>
-              <p>
-                <meta http-equiv="content-type" content="text/html;
-                  charset=UTF-8">
-              </p>
-              <div class="lm-Widget p-Widget jp-RenderedHTMLCommon
-                jp-RenderedMarkdown jp-MarkdownOutput"
-                data-mime-type="text/markdown">
-                <h4 id="Churn-Defined">Churn Defined</h4>
-                <ul>
-                  <li>1 - users who cancelled their subscription within
-                    the observation period</li>
-                  <li>0 - users who kept the service throughout</li>
-                </ul>
-              </div>
-              <p>Again, note that we look at both a Paying and Free
-                members. Sparkify wants neither to churn.<br>
-              </p>
-              <p>So these are the 19 columns that we have to work with.
-                The data set is now cleaned, meaning the nulls and/or
-                empty strings have been removed. At this stage, still
-                knowing little about the dataset, I prefer not to change
-                or impute any/many data values. As well, outliers are a
-                bit tough to identify without further information. For
-                example, the "Length" field represents the length of
-                time (in seconds I believe) that a song is play. If the
-                average length of a song is 4 minutes, 30 seconds and I
-                come across one that is 15 minutes in length what is the
-                best decision with what we presently know about the
-                dataset? I would say we keep it, and flag that as a
-                field in question. <br>
-              </p>
+              <h4 id="A-Second-Note-on-Salary">A Second Note on Salary<a
+                  class="anchor-link" href="#A-Second-Note-on-Salary">¶</a></h4>
+              <p>Those that know this data set may understand that at
+                least in the 2017 Survey, there are at least 75% of the
+                Salary type questions unanswered. This was for Salary,
+                Overpaid/Underpaid, and Expected Salary. I've covered
+                this specifically in my Notebook, but the Cliff's Notes
+                here is that I've used the Salary figures as data
+                points. Albeit weak data points due to the low amount of
+                data provided.</p>
               <p>In the world of Data Science, there are long chapters
                 in books and active debates on how to handle missing or
                 absent data. For some types of data, one can "impute"
                 values; looking at surrounding similar data and using
                 statistics to come up with often accurate replacement
-                data. In this case, imputing the fields would not be
-                recommended due to still having a lack of understanding
-                of the surrounding data that exists to do the
-                imputation.<br>
-              </p>
+                data. In this case, imputing the salary fields would not
+                be recommended due to 1) a small amount of surrounding
+                data that exists to do the imputation, and 2) salary's
+                can vary quite a bit from company to company.</p>
+              <p>So, with this caveat you'll still see some salary
+                analysis just be aware that we're working with a very
+                limited amount of salary data.</p>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
               <h4
-id="Question:-Is-there-any-correlation-between-job-and-career-satisfaction?">Explore
-
-
-
-
-
-
-                potential features<br>
-              </h4>
-              <p>Part of EDA is looking to get an understanding of the
-                data. I know that I have a 18 fields that contain many
-                of the fields that I'm interested in. This is just a
-                broad brush view of these fields, I'm just looking to
-                get a base understanding, so I'll do a variety of
-                groupings to examine relationships in my data. My
-                primary concern is looking for any patterns or relevancy
-                to churn.<br>
-              </p>
-              <p>Here is a visual of the unique subscribers, and
-                remember this is a smaller dataset. A Big Data dataset
-                would potentially have millions of subscribers; same
-                analysis, just larger numbers. This visual gives me an
-                understanding of the ratio of churned to non-churned
-                subscribers. At an initial glance, I see that my churn
-                level, while lower than non-churned is still higher that
-                I'd like to see. Let look further.</p>
-              <p><br>
-                <img src="unique%20by%20subscription.jpg" alt=""
-                  height="333" width="579"><br>
-                Here's an analysis by gender. As a trend, more males
-                churn than females. Of the active users, they are pretty
-                close. I'll want to consider gender as one of my
-                features I'm pretty sure now.<br>
-              </p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
-          <div class="inner_cell">
-            <div class="text_cell_render border-box-sizing
-              rendered_html"><br>
-              <img src="subscription%20by%20gender.jpg" alt=""
-                height="333" width="564"><br>
-              <br>
-              As a side note, in the world of visualizations, there are
-              a variety of libraries to choose from. Below is a visual
-              from a library known as Seaborn, which some users prefer
-              due to large variety of visualizations available. There is
-              a term in the visualization world known as "eye candy",
-              and while nothing is wrong with that, I find that I tend
-              to prefer the simpler visualizations since they are
-              usually quicker to set up and to me, convey the same
-              information.<br>
-              <br>
-              Remembering that 0 represents Non-Churn users, and 1
-              represents Churned users, this visual looks at the average
-              number of sessions. This numeric view gives me insight
-              into sessions of churned vs non-churned users. A session
-              is when a user logs in and does some activity or actions.
-              As I would expect, the more engaged users, shown by the
-              blue non-churned users outnumber the orange churned users.
-              But barely, so something causes the users to churn even
-              though they are active. Another feature to investigate.<br>
-              <br>
-              <img src="average%20sessions.png" alt="" height="283"
-                width="386"><br>
-              This visual provides both a view of the actions a user can
-              take besides playing songs and gives a great overview of
-              the activity levels and types of activity from users in
-              general, as well as specifically broken down by churned vs
-              active users. There were a few areas I wanted to
-              investigate here:<br>
-              <br>
-              <ul>
-                <li>The ratio of thumbs up vs thumbs down. I thought
-                  this important since larger number of thumbs down
-                  would make me wonder about Sparkify's overall
-                  selection of available music. However, the positive
-                  delta in favor of thumbs up makes me think that there
-                  is a good to very good selection of music. Although
-                  the higher number of thumbs down for churned users
-                  gives pause for thought about what is the profile of a
-                  churned user. Why are the more dissatisfied (as
-                  measured by Thumbs Down) that the non-churned user.</li>
-                <li>How much upgrading was done? Which here was not
-                  much, and more churned users cancelled their
-                  subscription than non-churned.</li>
-                <li>How much downgrading was done? More downgrades, and
-                  an almost equal number of churn to non-churned users
-                  here. Does this mean they don't see value in the paid
-                  service?</li>
-                <li>How about Add Friend? There was more activity here
-                  that I would have initially guessed. I would have also
-                  expected less churned users here, since I would think
-                  a user would more likely add a friend if they liked
-                  the Sparkify app.</li>
-                <li>What is the overall page activity?</li>
-              </ul>
-              So, page will be another feature I investigate.<br>
-              <img src="page%20usage.png" alt="" height="604"
-                width="597"><br>
-              <br>
-              <h4 id="More-Data-Understanding"><br>
-              </h4>
-              <h3
-                id="Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">Feature
-
-
-
-
-
-                Engineering<br>
-              </h3>
-              <br>
-              Feature Engineering is getting data selected and prepared
-              for a machine language model. This is very much an
-              iterative process, as you will want to add and/or subtract
-              features that enhance the accuracy and performance of your
-              model.<br>
-              <br>
-              Popular feature engineering tasks are:<br>
-              <br>
-              <ul>
-                <li><font size="-1">Imputation</font></li>
-                <li><font size="-1">Handling Outliers</font></li>
-                <li><font size="-1">Binning</font></li>
-                <li><font size="-1">Log Transform</font></li>
-                <li><font size="-1">One-Hot Encoding</font></li>
-                <li><font size="-1">Grouping Operations</font></li>
-                <li><font size="-1">Feature Split</font></li>
-                <li><font size="-1">Scaling</font></li>
-                <li><font size="-1">Extracting Date</font></li>
-              </ul>
-            </div>
-            <font size="-1"> </font></div>
-          <font size="-1"> </font></div>
-        <font size="-1"> </font>
-        <div class="cell border-box-sizing text_cell rendered"><font
-            size="-1"> </font>
-          <div class="prompt input_prompt"> </div>
-          <div class="inner_cell"><font size="-1"> </font>
-            <div class="text_cell_render border-box-sizing
-              rendered_html"><font size="-1"> </font>
-              <p style="box-sizing: unset; margin: 0px 0px 1em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">After
-
-
-
-
-
-                analyzing all the columns I decided to use below
-                features in my models:<br style="box-sizing: unset;">
-              </p>
-              <ul>
-                <li>Gender: Usually a given for initial model build<br>
-                </li>
-                <li>UserAgent: This field gave OS/method used to access
-                  Sparkify. (57 different categories). May be useful
-                  since it is the closest info we have on what kind of
-                  device is being use by the user.<br>
-                </li>
-                <li>Status: I included this since getting to the wrong
-                  app page is often considered a big negative.<br>
-                </li>
-                <li>Page: Used this since it covers the activity types.<br>
-                </li>
-              </ul>
-              <p style="box-sizing: unset; margin: 0px 0px 0.5em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">Once
-
-
-
-
-
-                the columns were identified, we now have to make sure
-                that they are all numeric datatype so that they could be
-                put into the model that we choose. The Gender, UserAgent
-                and Page columns had to be converted into numeric values
-                using a combination of String Indexing and One Hot
-                encoding.<br>
-              </p>
-              <p style="box-sizing: unset; margin: 0px 0px 0.5em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">I
-                chose just 4 features since we really didn't know much
-                about the dataset, and my preference is to start small
-                and increase the number of features. As mentioned, this
-                method, while potentially taking longer, I find useful
-                in the long run in creating models. <br>
-              </p>
-              <p style="box-sizing: unset; margin: 0px 0px 0.5em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">Side
-
-
-
-
-
-                note: At work, we use AutoAI more frequently
-                (https://www.ibm.com/cloud/watson-studio/autoai), which
-                does all the activities that I've done up to this point,
-                and will continue to building and tuning the model. The
-                robots are taking over! :-) But I'm seeing the overall
-                concept of AutoAI becoming popular very quickly since it
-                will do both feature engineering and hyperparameter
-                tuning both quickly and with increasingly accurate
-                results. One of the improvements I'll suggest is taking
-                this data and doing an experiment with Watson Studio
-                AutoAI and comparing results. Binary classifications are
-                one of the areas that I'm seeing AutoAI being very good
-                at. <br>
-              </p>
-              <p style="box-sizing: unset; margin: 0px 0px 0.5em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">Side
-
-
-
-
-
-                note #2: As a long time SPSS user, AutoAI in a more
-                limited capacity has been available for a number of
-                years. I would use it to help rank features which would
-                help lessen the time on feature engineering as well as
-                having SPSS do initial "best model" auto-selection. <br>
-              </p>
+id="Question:-Is-there-any-correlation-between-job-and-career-satisfaction?">Question:
+                Is there any correlation between job and career
+                satisfaction?<a class="anchor-link"
+href="#Question:-Is-there-any-correlation-between-job-and-career-satisfaction?">¶</a></h4>
+              <p>Part of CRISP-DM is to looking to get an understanding
+                of the data. I know that I have a 7 numeric fields that
+                contain many of the fields that I'm interested in. This
+                is just a broad brush view of these fields, I'm just
+                looking to get a base understanding. I am interested in
+                job and career satisfaction and looking at how they
+                relate to each other as well as to the other numeric
+                variables. One thing that becomes apparent though, is
+                that I need to start breaking down my data into the
+                countries that I select to represent the "East" and the
+                "West".</p>
+              <p>So I left this analysis in as a first step of
+                understanding, but I know that I need to dig deeper.</p>
             </div>
           </div>
         </div>
         <div class="cell border-box-sizing text_cell rendered">
-          <div class="prompt input_prompt"> </div>
+          <div class="prompt input_prompt">
+          </div>
           <div class="inner_cell">
             <div class="text_cell_render border-box-sizing
               rendered_html">
-              <h3
-                id="Data-Understanding-(CRISP-DM-Stage-2:-Data-Understanding)">Modeling
+              <p><img src="heat1.jpg" width="400" height="210"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="More-Data-Understanding">More Data Understanding<a
+                  class="anchor-link" href="#More-Data-Understanding">¶</a></h4>
+              <p>As seen in my Notebook, I created a series of bar
+                charts looking at variables that helped me to answer my
+                3 main busines questions as well as just looking for
+                general topics of interest. This is indeed an
+                interesting survey!</p>
+              <p>This is still part of the CRISP method; looking at your
+                data to understand it from a high level. I know that
+                shortly I'll be breaking this data down into the "East"
+                vs. "West" comparisons, but these sorts of bar charts
+                are easy to understand at a glance and often provide
+                some key insights into data.</p>
+              <p>I'm also interested in the abilty to work and
+                collaborate remotely. This is a key area for me for work
+                in the US, and I would prioritize this in other
+                countries. I've provided one of the bar charts here, and
+                as mentioned you can see the full set in my Notebook.</p>
+              <p>Side Note: This will be an interesting chart to look at
+                during and post Covid-19, since many companies that
+                traditionally did NOT encourage and/or allow working
+                remote had to quickly reframe that thinking.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="homeremote.jpg" width="600" height="400"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="Interesting-bar-charts-on-coding-languages">Interesting
+                bar charts on coding languages<a class="anchor-link"
+                  href="#Interesting-bar-charts-on-coding-languages">¶</a></h4>
+              <p>I suspect that most readers are interested in the what
+                lanaguages folks want to work with. So the bar chart
+                below...and again remember this is across all countries
+                surveyed...shows JavaScript as the main language
+                desired.</p>
+              <p>An interesting insight, as this would make me think
+                that many of the folks being surveyed work in Web Design
+                or at least are coding HTML scripts (where JavaScript is
+                mainly used).</p>
+              <p>I'd have expected (and hoped) that the next language
+                desired would be Python, and the data shows that is the
+                case.</p>
+              <p>The second bar chart covering languages that folks HAVE
+                worked in show JavaScript still a front runner. That
+                Python is one of the trailing languages make sense since
+                that is the time frame that Python was gaining more
+                mainstream acceptance as Data Science was becoming more
+                of a popular field.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="languages.jpg" width="600" height="400"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="languages2.jpg" width="600" height="400"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h2 id="Data-Understanding-Summary">Data Understanding
+                Summary<a class="anchor-link"
+                  href="#Data-Understanding-Summary">¶</a></h2>
+              <p>I had a lot of bar charts, since they were both of
+                interest to me as well as in general. A key item is that
+                this survey has what I'd considered "a lot" of variables
+                (152), but not too many that visually scanning data and
+                getting a high level view has value.</p>
+              <p>As well, I'd found that I while I'm looking at Salary
+                related information, I know that my sample size is much
+                smaller than the data set as a whole. So I'd be looking
+                at sites like "Glassdoor" and "LinkedIn" to get further
+                details on salary as I was doing my due diligence on
+                working in the East vs. West.</p>
+              <p>Next step will be Data Preparation. I know that I have
+                a lot of categorical information that I need to segment
+                into quantitative values for analysis, as well as do my
+                East and West country breakdown.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h1 id="Data-preparation">Data preparation<a
+                  class="anchor-link" href="#Data-preparation">¶</a></h1>
+              <h4 id="CRISP-DM-Stage-3:-Prepare-Data">CRISP-DM Stage 3:
+                Prepare Data<a class="anchor-link"
+                  href="#CRISP-DM-Stage-3:-Prepare-Data">¶</a></h4>
+              <p>For categorical variables "Country", I seperated them
+                into three sectors: western, eastern and other.</p>
+              <p>While I'm primarily interested in "East" vs. "West",
+                the I still want to keep the "Other" category for
+                information value.</p>
+              <p>Here is a code snippet that shows how I broke down East
+                and West countries. All remaining countries in the
+                survey defaulted to "Other":</p>
+              <pre><code>western = ['United States',  'Switzerland', 
+       'Iceland', 'Norway', 'Israel', 'Denmark', 
+       'Ireland', 'Canada', 'United Kingdom', 'Germany', 
+       'Netherlands', 'Sweden', 'Austria', 
+       'Finland', 'France', 'Belgium', 'Spain', 'Italy',
+       'Poland']
 
-
-
-
-
-                <br>
-              </h3>
-              <h4 id="Interesting-bar-charts-on-coding-languages"><br>
-              </h4>
-              <p>We finally get to modeling! <br>
-                <br>
-              </p>
-              <h5 id="Model-choices" style="box-sizing: unset;
-                line-height: var(--jp-content-heading-line-height);
-                font-style: normal; margin: calc(0.5 *
-                var(--jp-content-heading-margin-top)) ; font-size:
-                var(--jp-content-font-size1); caret-color: rgba(0, 0, 0,
-                0.87); color: rgba(0, 0, 0, 0.87); font-family:
-                -apple-system,BlinkMacSystemFont,&quot;Segoe
-                UI&quot;,Helvetica,Arial,sans-serif,&quot;Apple Color
-                Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI
-                Symbol&quot;; font-variant-caps: normal; letter-spacing:
-                normal; text-align: start; text-indent: 0px;
-                text-transform: none; white-space: normal; word-spacing:
-                0px; -moz-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">Model
-
-
-
-
-
-                choices</h5>
-              <p><br>
-              </p>
-              <p style="box-sizing: unset; margin: 0px 0px 1em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">We
-
-
-
-
-
-                have a simple but key business need here. Answer the
-                binary yes or no question: "Will a customer churn?".
-                This represents a dynamic on two important fronts:</p>
-              <ol>
-                <li>How can we keep existing customers from churning?</li>
-                <li>How can we prevent future customer from churning?</li>
-              </ol>
-              <p style="box-sizing: unset; margin: 0px 0px 1em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">There
-
-
-
-
-
-                is also a another key question that would require
-                potentially more data and analysis which is "How can we
-                get free customers to become paid customers?". As they
-                saying goes, that is beyond the scope of this exercise.
-                However, that would be my next step.<span
-                  class="Apple-converted-space">&nbsp;</span></p>
-              <p style="box-sizing: unset; margin: 0px 0px 1em;
-                text-align: left; caret-color: rgba(0, 0, 0, 0.87);
-                color: rgba(0, 0, 0, 0.87); font-family: -apple-system,
-                BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica,
-                Arial, sans-serif, &quot;Apple Color Emoji&quot;,
-                &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-                font-size: 14px; font-style: normal; font-variant-caps:
-                normal; font-weight: normal; letter-spacing: normal;
-                orphans: auto; text-indent: 0px; text-transform: none;
-                white-space: normal; widows: auto; word-spacing: 0px;
-                -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">Back
-
-
-
-
-
-                to the question at hand, how to prevent churn. I've
-                chosen two good classification models to use for this
-                exercise:</p>
-              <ul style="box-sizing: unset; list-style: disc;
-                margin-bottom: 0.5em; padding-left: 2em; caret-color:
-                rgba(0, 0, 0, 0.87); color: rgba(0, 0, 0, 0.87);
-                font-family: -apple-system, BlinkMacSystemFont,
-                &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif,
-                &quot;Apple Color Emoji&quot;, &quot;Segoe UI
-                Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size:
-                14px; font-style: normal; font-variant-caps: normal;
-                font-weight: normal; letter-spacing: normal; orphans:
-                auto; text-align: start; text-indent: 0px;
-                text-transform: none; white-space: normal; widows: auto;
-                word-spacing: 0px; -webkit-text-size-adjust: auto;
-                -webkit-text-stroke-width: 0px; text-decoration: none;">
-                <li style="box-sizing: unset;">Logistic regression</li>
-                <li style="box-sizing: unset;">Random Forest</li>
+eastern = ['Thailand', 'Singapore', 'Hong Kong', 
+       'South Korea', 'Japan', 'China', 
+       'Taiwan',  'India', 
+       'Indonesia', 'Vietnam']</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="Main-Fields-of-interest.">Main Fields of interest.<a
+                  class="anchor-link" href="#Main-Fields-of-interest.">¶</a></h4>
+              <p>These fields are the ones that I've chosen for my
+                remaining analysis to answer the 3 business questions:</p>
+              <ul>
+                <li>Country: Country they are living</li>
+                <li>YearsCodedJob: Years they are coding</li>
+                <li>EmploymentStatus: Their employment status</li>
+                <li>Salary: Their Salary</li>
+                <li>JobSatisfaction &amp; CareerSatisfaction: Are their
+                  satisfy their job and career</li>
+                <li>Overpaid: How they think about their salary</li>
               </ul>
-              <p>Here we split the dataset into training, testing, and
-                validation sets. If you look at the Github notebook, you
-                can see the setup of the two models. As suggested in the
-                Udacity Capstone assigned, F1 score was used to
-                determine the best model.<br>
-              </p>
-              <p>In this case, the best F1 score was the Logistic
-                Regression which had an F1 score of 0.854. This was
-                versus the F1 score of the Random Forest Classifier of
-                0.7861.<br>
-              </p>
-              <p>
-                <meta http-equiv="content-type" content="text/html;
-                  charset=UTF-8">
-              </p>
-              <div class="text_cell_render rendered_html" tabindex="-1">
-                <h1 id="Conclusion">Conclusion</h1>
-                <p>We have a starting point with our Logistic Regression
-                  model with the F1 score of .854. As suggested, we'll
-                  use the F1 score as the initial criteria. </p>
-                <p>With customer churn, the historical data is golden as
-                  we know who did and did not churn. Our data set offers
-                  us this as the basis for training our model, and we
-                  have two immediate actions we can take:</p>
-                <p>1) Look at the current customers and create an
-                  assessment of who will be likely to churn based on
-                  using our model. Those customers may need some further
-                  incentive to stay, such as a financial incentive for
-                  our paying customers and a reduction in ad frequency
-                  for our free customers.</p>
-                <p>2) Examine all new customers and make an assessment
-                  of their likelihood to churn.</p>
-                <p>Sparkify managment also needs to review their free
-                  customer paradigm. We were not provided the data the
-                  shows how profitable free vs. paying customer are.
-                  It's not a simple choice to say that Sparkify makes
-                  more money on the paying customers over the free
-                  customers. Potentially the ad revenue compensates more
-                  than the pay revenue; the record/music companies that
-                  supply Sparkify their music to play may offer
-                  financial incentives based on advertisement. There are
-                  many factors to consider here.</p>
-                <p>Should paying customer generate more revenue than
-                  free customers, the next model set to be built and
-                  tested would be building a prediction model to
-                  determine propensity to upgrade. Our dataset provides
-                  a good starting point for that, again that would be a
-                  binary classification problem ("Did the customer
-                  upgrade: Yes or No?")</p>
-                <p>Sparkify appears to be an active site; there are a
-                  lot of songs being played, playlists created, and
-                  friends added. All of those are potential features to
-                  continue to mine and refine. This is all part of the
-                  ML discovery process. </p>
-                <p>Pyspark and Big Data are also key elements of the
-                  technology here. Being able to assess large volumes of
-                  data via Hadoop, HDFS, and Spark represents an ability
-                  to keep tied into the Sparkify user community in an
-                  accurate and also fairly inobtrusive way via log data
-                  analysis. </p>
-                <p>Data Privacy is an element that should likely be
-                  addressed as well, as the log data set includes both
-                  name and location data. There are a number of useful
-                  data obfuscation/anonymization techniques available.
-                  Sparkify would be advised to review their data privacy
-                  policies. </p>
-                <p>Lastly, Pyspark represents a very useful way of
-                  approaching Big Data programming married with the
-                  efficiency and ease of Python programming. In the
-                  world of Data Science, both Python and SQL programming
-                  skills are both useful to have and faily plentiful in
-                  the labor market. </p>
-                <p>Sparkify is off to a good start with the approach to
-                  both Big Data and Data Science!<br>
-                </p>
-                <p>
-                  <meta http-equiv="content-type" content="text/html;
-                    charset=UTF-8">
-                </p>
-                <div class="text_cell_render rendered_html"
-                  tabindex="-1">
-                  <h1 id="Improvement">Improvement</h1>
-                  <p>These are the next areas I would improve this
-                    exercise with:</p>
-                  <p>1) Tuning Here's a great guide: <a
-href="https://medium.com/rahasak/random-forest-classifier-with-apache-spark-c63b4a23a7cc"
-                      target="_blank">https://medium.com/rahasak/random-forest-classifier-with-apache-spark-c63b4a23a7cc</a>
-                    and here: <a
-href="https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76"
-                      target="_blank">https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76</a></p>
-                  <p>2) Cracking the code on displaying a good,
-                    readable, "most important features" list. Here is a
-                    good start:</p>
-                  <p><a
-href="https://www.timlrx.com/2018/06/19/feature-selection-using-feature-importance-score-creating-a-pyspark-estimator/"
-                      target="_blank">https://www.timlrx.com/2018/06/19/feature-selection-using-feature-importance-score-creating-a-pyspark-estimator/</a></p>
-                  <p>3) Add more metrics for analysis</p>
-                  <p>There are a lot of good metrics and evaluation
-                    metrics from MulticlassMetrics. You'll need to
-                    include: </p>
-                  <p>"from pyspark.mllib.evaluation import
-                    MulticlassMetrics"</p>
-                  <p>Here are some good references and code samples for
-                    getting further details</p>
-                  <p><a
-href="https://spark.apache.org/docs/2.3.0/api/python/_modules/pyspark/mllib/evaluation.html"
-                      target="_blank">https://spark.apache.org/docs/2.3.0/api/python/_modules/pyspark/mllib/evaluation.html</a></p>
-                  <p>and a potpourri of evaluation metrics: <a
-                      href="https://spark.apache.org/docs/2.3.0/mllib-evaluation-metrics.html"
-                      target="_blank">https://spark.apache.org/docs/2.3.0/mllib-evaluation-metrics.html</a></p>
-                  <p>4) Sparkify needs to review their data privacy
-                    program. Good info on Python and data
-                    obfuscation/redaction:</p>
-                  <p><a
-href="https://medium.com/district-data-labs/a-practical-guide-to-anonymizing-datasets-with-python-faker-ecf15114c9be"
-                      target="_blank">https://medium.com/district-data-labs/a-practical-guide-to-anonymizing-datasets-with-python-faker-ecf15114c9be</a></p>
-                  <p><a
-href="https://towardsdatascience.com/revolutionising-redaction-my-final-year-project-fe664e28ef84"
-                      target="_blank">https://towardsdatascience.com/revolutionising-redaction-my-final-year-project-fe664e28ef84</a><br>
-                  </p>
-                  <p>5) More information around the dataset. Possibly
-                    because it's very rare for me to have someone hand
-                    me a dataset saying "Here, we don't know anything
-                    about it, have at it". Well, while we do know a few
-                    things about the dataset, there is a lot we don't
-                    know. Not that it's a big problem as much as you saw
-                    in my approach to this project of starting small.
-                    The above 4 improvement areas I would undertake,
-                    although in the absence of getting more information
-                    about the dataset, as I iterate through the process
-                    of more features engineering and ML tuning, I
-                    believe that would be adding more assumptions about
-                    the dataset. <br>
-                  </p>
+              <p>I also wanted to have a breakdown by Years individuals
+                were coding, since I'm interested in the maturity levels
+                of companies and the regions of interet</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h3 id="Review-Findings">Review Findings<a
+                  class="anchor-link" href="#Review-Findings">¶</a></h3>
+              <h4 id="CRISP-DM-Stage-4/5:-Model-Data-and-Results">CRISP-DM
+                Stage 4/5: Model Data and Results<a class="anchor-link"
+                  href="#CRISP-DM-Stage-4/5:-Model-Data-and-Results">¶</a></h4>
+              <p>Now to review our findings after Data Preparation...</p>
+              <p>A helpful thought about survey data. A single years
+                survey data is a snapshot of results, so "modeling" may
+                mean different things to different individuals. I used
+                Explanatory Modeling the in my Data Preparation and
+                Modeling. This is as opposed to Predictive modeling.
+                Nothing wrong with Predictive Modeling, but basic
+                statistical analysis, EDA, and something as simple as a
+                bar graph can go a long way in getting a point across.
+                As well, my 3 business questions are pretty
+                straighforward.</p>
+              <p>But Predictive Modeling certainly has a place in survey
+                analysis. For example, I could use Predictive Modeling
+                to analyze trends across a series of ages: "How does age
+                relate to job satisfaction in countries that have a
+                larger vs. smaller number of hours worked per week?". I
+                will likely covered questions like that in my next blog
+                post (aka "Capstone Project).</p>
+              <p>Also, Sentiment and Classification models work very
+                well for Predictive Models and subsequent analysis. See
+                the references at the end of this post.</p>
+              <p>Now on to the various visuals and analysis I did to
+                answer my 3 business questions:</p>
+              <ul>
+                <li>What is the salary difference between the West and
+                  the East?</li>
+                <li>Any significant job satisfaction differences?</li>
+                <li>What is the propensity to work remotely? </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="An-old-favorite:-Correlation-Analysis">An old
+                favorite: Correlation Analysis<a class="anchor-link"
+                  href="#An-old-favorite:-Correlation-Analysis">¶</a></h4>
+              <p>Here is a heatmap that shows correlations broken down
+                by East, West, and Other. The red spectrum means
+                stronger correlations, and the blue spectrum means
+                weaker correlations. Not much of a surprise that there
+                are strong correlations in both the East and West
+                between Job and Career Satisfaction. It's good that
+                there is a breakdown between these two areas, since Job
+                Satisfaction can be affected by changing jobs, learning
+                new and often related skills (Python vs. JavaScript),
+                making more money. Career Satisfaction is something that
+                often influences bigger life changes, such as changing
+                careers completely.</p>
+              <p>Remember Salary is a weak data point due to sample
+                size, but that said I was a bit surprised with the low
+                correlations between Job Satisfaction and Salary. But
+                only a bit, as I'd heard Salary in general referred to
+                as a "Satis-ficer". Meaning salary, once a certain
+                sufficient level is achieved, provides less
+                satisfaction.</p>
+              <p>I did want to investigate further into Collaborate
+                Remote as well, again lower correlations that I'd like
+                to see. It appears that it's more imporant in the West
+                than the East, but still it's a low number for both.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="heatmap2.jpg" width="800" height="600"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="Salary-Analysis">Salary Analysis<a
+                  class="anchor-link" href="#Salary-Analysis">¶</a></h4>
+              <p>Yet again, I emphasize this is a small sample relative
+                to the full survey. That said, it's pretty obvious the
+                salary levels in the west are higher in the east across
+                all experience levels.</p>
+              <p>Nothing in the data called out specifically an easy
+                explanation for the drop, then rise of Salaries in the
+                East for the more experience individuals. For a further
+                step, I could reduce the sample set even more by looking
+                to cull out the "outliers" for those years. But then
+                again, those are possibly important trends to be aware
+                of. I would also look at other salary data, and/or
+                possibly a different year StackOverflow survey to see if
+                this is similar there.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="salary.jpg" width="600" height="400"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="Are-you-overpaid-or-underpaid?">Are you overpaid
+                or underpaid?<a class="anchor-link"
+                  href="#Are-you-overpaid-or-underpaid?">¶</a></h4>
+              <p>I thought this would also be a useful analysis. In
+                general, those in the West see themselves as trending
+                towards overpaid. I'm not sure what the significance of
+                the big drop after 12.5 years to greatly underpaid,
+                unless there is an age bias in the Eastern Countries.
+                However, that theory is a little weak with the sudden
+                rise to overpaid at 15 years or greater.</p>
+              <p>Overpaid/underpaid is still a pretty subjective
+                category. What would have been helpful is to have a
+                metric that held the industry averages for each country
+                to compare against. For my purposes, this analysis tells
+                me that the survey respondents in the east generally
+                feel more underpaid than those in the west.</p>
+              <p>As a reminder, here is the map I used to map values to
+                the Overpaid survey question:</p>
+              <pre><code>overpaid_map = {
+    'Greatly underpaid' : 1,
+    'Somewhat underpaid' : 2,
+    'Neither underpaid nor overpaid' : 3,
+    'Somewhat overpaid' : 4,
+    'Greatly overpaid' : 5,
+    np.nan: np.nan</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="overpaid.jpg" width="600" height="400"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="Collaborate-Remote-and-Work-Remote">Collaborate
+                Remote and Work Remote<a class="anchor-link"
+                  href="#Collaborate-Remote-and-Work-Remote">¶</a></h4>
+              <p>I feel these are a key areas, both from a personal
+                interest as well as overall industry trend and now in
+                the current/post Covid world a necessity. Keep in mind
+                the question asked here from the survey is "It's harder
+                to collaborate with remote peers than those on site?".
+                So this is a subjective assessment; for further
+                evaluation Sentiment Analysis would be good here.</p>
+              <p>Again, it's important to remember how the questions are
+                phrased:</p>
+              <ul>
+                <li>Collaborate Remote: "It's harder to collaborate with
+                  remote peers than those on site"</li>
+                <li>Home Remote: "How often do you work from home or
+                  remotely?"</li>
+              </ul>
+              <p>The first is subjective, the second quantitative.</p>
+              <p>For analysis, Collaborate Remote is mapped as:</p>
+              <ul>
+                <li>Strongly disagree: 1,</li>
+                <li>Somewhat agree: 2,</li>
+                <li>Agree: 3,</li>
+                <li>Disagree: 4,</li>
+                <li>Strongly agree: 5</li>
+              </ul>
+              <p>And Work Remote is mapped as:</p>
+              <ul>
+                <li>Never: 1,</li>
+                <li>Less than half the time, but at least one day each
+                  week: 2,</li>
+                <li>A few days each month: 3,</li>
+                <li>About half the time: 4,</li>
+                <li>More than half, but not all, the time: 5,</li>
+                <li>It's complicated: 6,</li>
+                <li>All or almost all the time (I'm full-time remote): 7</li>
+              </ul>
+              <p>Arguably, "It's complicated" could have been dropped
+                from the analysis, but there were a small number of them
+                so I kept them in.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p>Following are a series of visuals produced that show
+                various relationship between Collaborate Remote, Work
+                Remote (the Home Remote variable), and Job Satisfaction:</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4
+                id="Working-remote-in-2017-was-not-a-significant-amount.">Working
+                remote in 2017 was not a significant amount.<a
+                  class="anchor-link"
+                  href="#Working-remote-in-2017-was-not-a-significant-amount.">¶</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="workremotecount.jpg" width="500" height="300"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4
+id="For-the-East,-job-satisfaction-is-lower-than-the-West,-however-the-East-skews-more-towards-finding-it-easier-to-collaborate-remote.">For
+                the East, job satisfaction is lower than the West,
+                however the East skews more towards finding it easier to
+                collaborate remote.<a class="anchor-link"
+href="#For-the-East,-job-satisfaction-is-lower-than-the-West,-however-the-East-skews-more-towards-finding-it-easier-to-collaborate-remote.">¶</a></h4>
+              <p>Ball size here indicates average hours per week higher
+                in the East, possibly an downward influence on the Job
+                satisfaction.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="collaborate and job sat hours.jpg"
+                  width="500" height="300"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p>Ball size here indicates salary lower in the East,
+                another potential downward influence on the Job
+                satisfaction.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="collaborate and job sat.jpg" width="500"
+                  height="300"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="Career-vs.-Job-Satisfaction">Career vs. Job
+                Satisfaction<a class="anchor-link"
+                  href="#Career-vs.-Job-Satisfaction">¶</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p>Here, we can see that western programmers (blue ball)
+                have a much higher satisfaction on their job and career,
+                positioned at the right-high-up corner. The ball size
+                indicator their average salary, the blue ball size is
+                much larger than the red ball (eastern programmers
+                salary).</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <p><img src="career and job sat.jpg" width="500"
+                  height="300"></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h3 id="Conclusion">Conclusion<a class="anchor-link"
+                  href="#Conclusion">¶</a></h3>
+              <h4 id="CRISP-DM-Stage-5:-Evaluation/Deployment">CRISP-DM
+                Stage 5: Evaluation/Deployment<a class="anchor-link"
+                  href="#CRISP-DM-Stage-5:-Evaluation/Deployment">¶</a></h4>
+              <ol>
+                <li>Across the range of age brackets, the salary levels
+                  reported for "Eastern" vs. "Western" countries (as
+                  defined by myself) were lower.</li>
+                <li>There was a big drop after 12.5 years to greatly
+                  underpaid, that could possibly indicate an age bias in
+                  the Eastern Countries. However, that theory is a
+                  little weak with the sudden rise to overpaid at 15
+                  years or greater. There would be two ways to treat
+                  this:
+                  <ul>
+                    <li>Remove those low values</li>
+                    <li>Investigate further; however this would require
+                      finding data beyond this survey data</li>
+                  </ul>
+                </li>
+                <li>As well, Job Satisfaction and Career Satisfaction
+                  are higher for those in the "Western" countries vs
+                  "Eastern". This would be an area that would be worth
+                  investigating further, looking for anecdotal data from
+                  sites such as Glassdoor, LinkedIn, etc. As well,
+                  interviewing in those countries should include
+                  questions that cover this topic as well.</li>
+                <li>It's worth looking at the types of Machine Learning
+                  and Statistical Models to be used with Survey and
+                  other subjective data and looking closely at how the
+                  categorical data is translated to quantitative
+                  measures for analysis. Further analysis via Sentiment
+                  would also be a good area to review.</li>
+              </ol>
+              <p>Deployment is this blog post. :-) My github page
+                provides more analysis in the Notebook as well as
+                documenting the analysis research.</p>
+              <h4 id="Final-Thoughts">Final Thoughts<a
+                  class="anchor-link" href="#Final-Thoughts">¶</a></h4>
+              <p>This data is valuable in evaluating in looking at a
+                position working in the East or West. For my situation,
+                as working in the US, I would be inclined to do more due
+                diligence in researching an opportunity in the East. I'd
+                also expect to be working in general more hours in the
+                East, and I would also be insure to look closely at a
+                potential employer and their view toward working remote.</p>
+              <p>Also, survey development and analysis is a fascinating
+                field unto itself! I would recommend looking at the
+                StackOverflow analysis of their 2017 survey here: <a
+                  href="https://insights.stackoverflow.com/survey/2017">https://insights.stackoverflow.com/survey/2017</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing text_cell rendered">
+          <div class="prompt input_prompt">
+          </div>
+          <div class="inner_cell">
+            <div class="text_cell_render border-box-sizing
+              rendered_html">
+              <h4 id="References">References<a class="anchor-link"
+                  href="#References">¶</a></h4>
+              <p>Note: I was torn between doing a Covid-19 study with
+                this data looking at potential COBOL programmers (since
+                there is a shortage of COBOL programmers) and the
+                West/East comparison. In the end as relevant as the
+                COBOL study would have been, I decided on West vs. East
+                since I still am considerating a position in one of the
+                emerging markets.</p>
+              <p>This was a helpful overview POV of writing a Blog
+                Posting: <a
+href="https://medium.com/@AbdulazizKTA/write-a-data-science-blog-post-f8c5e1ece761">https://medium.com/@AbdulazizKTA/write-a-data-science-blog-post-f8c5e1ece761</a></p>
+              <p>While I didn't end up using much from here, this is a
+                great recap of Andrew Ng's ML class from Stanford: <a
+href="https://drive.google.com/file/d/1TgcLh0XzkFioN9vd7xwLzsKp2pHMKd8_/view">https://drive.google.com/file/d/1TgcLh0XzkFioN9vd7xwLzsKp2pHMKd8_/view</a></p>
+              <p>Covid-19 Projects on Kaggle: <a
+                  href="https://www.kaggle.com/covid19">https://www.kaggle.com/covid19</a></p>
+              <p>This is a classic, and helpful in putting together a
+                Data Science Blog Post: <a
+                  href="https://www.kaggle.com/c/titanic">https://www.kaggle.com/c/titanic</a></p>
+              <p>Good info here on Data Science Blog Posts, and a good
+                section on Git integration: <a
+                  href="https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/">https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/</a></p>
+              <p>Hindsight is 20-20! It's instructive and informative to
+                see the overall analysis that Stack Overflow does
+                themselves on their survey data: <a
+                  href="https://insights.stackoverflow.com/survey/2017">https://insights.stackoverflow.com/survey/2017</a></p>
+              <p>I'm using the CRISP-DM framework from our lesson 1 as
+                well as an SPSS link provided around CRISP-DM</p>
+              <p>A helpful thought about survey data. A single years
+                survey data is a snapshot of results, so "modeling" may
+                mean different things to different individuals. I liked
+                this article on Explanatory vs. Predictive modeling. So
+                much of what I see in my workday is around Predicitive
+                model..."show me the future" thinking. Nothing wrong
+                with that, but basic statistical analysis, EDA, and
+                something as simple as a bar graph can go a long way in
+                getting a point across. See: <a
+href="https://www.surveypractice.org/article/2718-an-introduction-to-machine-learning-methods-for-survey-researchers">https://www.surveypractice.org/article/2718-an-introduction-to-machine-learning-methods-for-survey-researchers</a></p>
+              <p>That said, modeling such as classification with survey
+                data is a great technique. The folks at Survey Monkey
+                have some ideas here: <a
+href="https://monkeylearn.com/blog/survey-analysis/#what-is-aspect-based-sentiment-analysis">https://monkeylearn.com/blog/survey-analysis/#what-is-aspect-based-sentiment-analysis</a></p>
+              <p>Coming from SPSS, I've found that Sentiment Analysis is
+                a very powerful and a common way to analyze data. There
+                are a variety of automated/expert models in SPSS around
+                sentiment and classification, and KDnuggets here
+                provides a good overview as well: <a
+href="https://www.kdnuggets.com/2018/03/5-things-sentiment-analysis-classification.html">https://www.kdnuggets.com/2018/03/5-things-sentiment-analysis-classification.html</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="cell border-box-sizing code_cell rendered">
+          <div class="input">
+            <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+            <div class="inner_cell">
+              <div class="input_area">
+                <div class=" highlight hl-ipython3">
+                  <pre><span></span> 
+</pre>
                 </div>
               </div>
-              <h1>Final Thoughts</h1>
-              <p>I have gained a tremendous amount of knowledge from my
-                almost year long Udacity Data Scientist program. I find
-                that I use what I've learned here several times a week,
-                and in my role as a pre-sales Analytics Architect in
-                IBM's Data and AI group, it continues to be helpful in
-                my interactions with both Data Scientists on the
-                technical end and Executives on the business end. <br>
-              </p>
-              <p>The Capstone project was really interesting, although
-                it morphed from a project that was looking at mortality
-                rates from Covid-19 compared to other leading rates, but
-                much of the data I really wanted to get was either
-                in-accessible or not really of very high quality. The
-                data that Johns Hopkins sources is accurate enough, but
-                again gaining access was more the challenge. As well, as
-                the findings for Covid-19 are fast changing, I found
-                that I ended up redesigning the project several times.
-                Another project for a rainy day! :-)<br>
-              </p>
-              <p>So, this Pyspark project was helpful from that a work
-                perspective since Spark is a significant part of the
-                Watson Studio make-up. I definitely see the value of
-                what Spark represents, although Pyspark was a little
-                unwieldy at times. I found that some of the metrics that
-                I had an easy time getting with Python, Numpy, and
-                Sci-Py were tougher to dig up. <br>
-              </p>
-              <p>But in the end, it all comes back to Python for me. For
-                the longest time, C has been my favored programming
-                language although I do so little with it these days.
-                Similar to getting your head around pointers and
-                references in C, once you get the slice and dice easy of
-                Python down, there's little that one can't do. <br>
-              </p>
-              <p>As well, this course was a great introduction to
-                Machine Learning. I still feel like I've a ways to go,
-                especially around the math and theory around models.
-                I've always enjoyed Statistics, so that element of ML
-                has been great. One of the reviewers had mentioned the
-                Andrew Ng online class to me, so I'll add that to the
-                next big online learning. <br>
-              </p>
-              <p>Thanks for everything, really enjoyed the time here at
-                Udacity!<br>
-              </p>
-              <p>Tom Sensabaugh<br>
-              </p>
             </div>
           </div>
         </div>
